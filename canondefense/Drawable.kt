@@ -1,8 +1,8 @@
 package com.example.canondefense
 
-open class Drawable(view: DrawingView) {
-    fun draw() {
+import android.graphics.Canvas
 
-    }
+abstract class Drawable(view: DrawingView) {
+    open fun draw(canvas: Canvas) {}
 
 }
